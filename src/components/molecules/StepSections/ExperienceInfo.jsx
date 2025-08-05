@@ -4,24 +4,24 @@ const ExperienceInfo = () => {
   return (
     <div className="row g-3">
       <CustomInput
-        label="Deneyim Yılı"
+        label="Experience Year"
         name="experience.years"
         type="number"
-        placeholder="Deneyim sürenizi yazınız"
+        placeholder="Please enter experience year"
         className="col-md-6"
       />
       <CustomInput
-        label="Çalışılan Şirket"
+        label="Current Company"
         name="experience.currentCompany"
         type="text"
-        placeholder="Şuan çalıştığınız şirketi yazınız"
+        placeholder="Please enter current company"
         className="col-md-6"
       />
       <CustomInput
-        label="Ünvan"
+        label="Position"
         name="experience.position"
         type="text"
-        placeholder="Ünvanınızı yazınız"
+        placeholder="Please enter position"
         className="col-12"
       />
     </div>

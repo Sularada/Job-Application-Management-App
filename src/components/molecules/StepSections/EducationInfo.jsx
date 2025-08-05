@@ -18,17 +18,17 @@ const EducationInfo = () => {
         <option value="bilkent">Bilkent University</option>
       </CustomSelect>
       <CustomInput
-        label="Bölüm"
+        label="Department"
         name="education.department"
         type="text"
-        placeholder="Bölümünüzü giriniz"
+        placeholder="Department name"
         className="col-md-6"
       />
       <CustomInput
-        label="Mezuniyet Yılı"
+        label="Graduation Year"
         name="education.graduationYear"
         type="number"
-        placeholder="Mezuniyet yılınızı giriniz"
+        placeholder="Graduation year"
         className="col-md-6"
       />
       <CustomInput
@@ -36,7 +36,7 @@ const EducationInfo = () => {
         name="education.gpa"
         type="number"
         step="0.01"
-        placeholder="GPA notunuzu giriniz"
+        placeholder="GPA score"
         className="col-md-6"
       />
     </div>

@@ -7,7 +7,10 @@ import TestResult from "../components/organisms/infoScreens/testCompleted";
 
 const Router = () => {
   const routes = useRoutes([
-    { path: "/", element: <SignInView /> },
+    {
+      path: "/",
+      element: <SignInView />,
+    },
     { path: "/form", element: <GeneralFormView /> },
     { path: "/applications", element: <ApplicationsView /> },
     { path: "/quiz/:id", element: <Quiz /> },

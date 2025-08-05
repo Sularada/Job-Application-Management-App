@@ -8,16 +8,17 @@ import { unsubscribe } from "../../services/authServices";
 const GeneralForm = () => {
   const [activeStep, setActiveStep] = useState(0);
   const [userAuth, setUserAuth] = useState(null);
+
   useEffect(() => {
     unsubscribe(setUserAuth);
   }, [userAuth]);
+
   const handleNext = async (validateForm) => {
     const errors = await validateForm();
     if (Object.keys(errors).length === 0) {
       setActiveStep((prev) => prev + 1);
     }
   };
-
   const handleBack = () => setActiveStep((prev) => prev - 1);
   const submitApplication = useSubmitApplication(setActiveStep);
 
@@ -26,7 +27,7 @@ const GeneralForm = () => {
       <div className="w-100 mx-auto py-5  justify-content-center row">
         <div className="col-12 col-md-8 col-lg-6">
           <div className="card shadow-lg p-4">
-            <h2 className="text-center mb-4">Başvuru Formu</h2>
+            <h2 className="text-center mb-4">Application Form</h2>
             <Formik
               initialValues={{
                 userId: `${userAuth.uid}`,

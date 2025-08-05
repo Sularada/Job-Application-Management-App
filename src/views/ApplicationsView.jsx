@@ -25,7 +25,7 @@ const Applications = () => {
     <div>Loading...</div>
   ) : (
     <div className="container py-4">
-      <h1 className="mb-4 text-center text-primary">Tüm Başvurular</h1>
+      <h1 className="mb-4 text-center text-primary">Applications</h1>
       <div className="accordion" id="applicationsAccordion">
         {apps.map((application, index) => (
           <AccordionItem

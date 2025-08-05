@@ -1,7 +1,7 @@
 import React from "react";
 import getStepContent from "../../../hooks/getFormSection";
 import { Step, Stepper } from "react-form-stepper";
-import Button from "../../atoms/buttons/Button";
+import Button from "../../atoms/button/Button";
 import { useNavigate } from "react-router";
 const CustomStepper = ({
   handleBack,
@@ -13,11 +13,11 @@ const CustomStepper = ({
   return (
     <div>
       <Stepper className="flex-wrap" activeStep={activeStep}>
-        <Step label="Kişisel Bilgiler" />
-        <Step label="Eğitim" />
-        <Step label="Deneyim" />
-        <Step label="Beceriler" />
-        <Step label="Ek Bilgiler" />
+        <Step label="Personal Information" />
+        <Step label="Education" />
+        <Step label="Experience" />
+        <Step label="Skills" />
+        <Step label="Addittional Information" />
       </Stepper>
 
       <div className="mt-4">{getStepContent(activeStep)}</div>
@@ -29,7 +29,7 @@ const CustomStepper = ({
             type="button"
             onClick={handleBack}
           >
-            Geri dön
+            Back
           </Button>
         )}
 
@@ -39,7 +39,7 @@ const CustomStepper = ({
             type="button"
             onClick={handleNext}
           >
-            Devam et
+            Continue
           </Button>
         ) : (
           <Button

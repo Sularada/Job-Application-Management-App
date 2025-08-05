@@ -4,37 +4,37 @@ const PersonalInfo = () => {
   return (
     <div className="row g-3">
       <CustomInput
-        label="Ad - Soyad"
+        label="Fullname"
         name="personal.fullname"
         type="text"
-        placeholder="Adınızı ve soyadınızı giriniz"
+        placeholder="Please enter your fullname"
         className="col-md-6"
       />
       <CustomInput
         label="Email"
         name="personal.email"
         type="email"
-        placeholder="Mail adresinizi giriniz"
+        placeholder="Please enter your email"
         className="col-md-6"
       />
       <CustomInput
-        label="Telefon"
+        label="Phone Number"
         name="personal.phone"
         type="tel"
-        placeholder="Telefon numaranızı giriniz"
+        placeholder="Please enter your phone number"
         className="col-md-6"
       />
       <CustomInput
-        label="Doğum Tarihi"
+        label="Birth Date"
         name="personal.birthDate"
         type="date"
         className="col-md-6"
       />
       <CustomInput
-        label="Adres"
+        label="Address"
         name="personal.address"
         type="textarea"
-        placeholder="Adresinizi giriniz"
+        placeholder="Please enter your address"
         className="col-12"
       />
     </div>

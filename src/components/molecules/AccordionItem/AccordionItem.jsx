@@ -8,6 +8,14 @@ const AccordionItem = ({
   sonrakiAsama,
 }) => {
   const [app, setApp] = useState(application);
+  const universities = {
+    bogazici: "Boğaziçi University",
+    gsu: "Galatasaray University",
+    odtu: "Middle East Technical University (ODTÜ)",
+    itu: "Istanbul Technical University (İTÜ)",
+    hacettepe: "Hacettepe University",
+    bilkent: "Bilkent University",
+  };
   return (
     <div className="accordion-item border rounded shadow-sm mb-3" key={app.id}>
       <h2 className="accordion-header" id={`heading${app.id}`}>
@@ -19,7 +27,7 @@ const AccordionItem = ({
           aria-expanded="true"
           aria-controls={`collapse${app.id}`}
         >
-          {app.personal.fullname} - {app.education.university} -{" "}
+          {app.personal.fullname} - {universities[app.education.university]} -
           {app.experience.position}
         </button>
       </h2>

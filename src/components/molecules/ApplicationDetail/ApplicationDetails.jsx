@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
-import Button from "../../atoms/buttons/Button";
+import Button from "../../atoms/button/Button";
 
 import {
   setMessage,
@@ -17,7 +17,7 @@ const ApplicationDetails = ({ app, setApp, user, sonrakiAsama }) => {
   const navigate = useNavigate();
   const handleModalOpen = () => setShowModal(true);
   const handleModalClose = () => setShowModal(false);
-
+  console.log(app);
   const handleSubmit = () => {
     setQuestionCount(app.id, {
       easy: easyCount,
@@ -45,7 +45,6 @@ const ApplicationDetails = ({ app, setApp, user, sonrakiAsama }) => {
         <AppSection section={app?.education} id="education" />
         <AppSection section={app?.experience} id="experience" />
         <div className="col-lg-3">
-          <h5 className="fw-bold text-secondary">Beceriler</h5>
           <p>
             <strong>Programming Languages:</strong>{" "}
             {app.skills.programmingLanguages

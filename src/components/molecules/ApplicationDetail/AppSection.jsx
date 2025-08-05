@@ -9,6 +9,14 @@ const AppSection = ({ section, id }) => {
   useEffect(() => {
     setSchema();
   }, []);
+  const universities = {
+    bogazici: "Boğaziçi University",
+    gsu: "Galatasaray University",
+    odtu: "Middle East Technical University (ODTÜ)",
+    itu: "Istanbul Technical University (İTÜ)",
+    hacettepe: "Hacettepe University",
+    bilkent: "Bilkent University",
+  };
   return (
     sectionSchema && (
       <div className="col-lg-3">
@@ -16,7 +24,11 @@ const AppSection = ({ section, id }) => {
         {Object.entries(section).map(([key, value]) => (
           <p key={key}>
             <strong>{sectionSchema[`${key}`]}</strong>{" "}
-            {value == "" ? "Bilgi girilmemiş" : value}
+            {key == "university"
+              ? universities[value]
+              : value == ""
+              ? " - "
+              : value}
           </p>
         ))}
       </div>
