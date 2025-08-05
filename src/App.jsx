@@ -1,5 +1,5 @@
 import "./scss/main.scss";
-import Navbar from "./components/organisms/Navbar/Navbar";
+import Navbar from "./components/organisms/navbar/Navbar";
 import Router from "./routes/router";
 
 function App() {
