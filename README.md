@@ -1,12 +1,38 @@
-# React + Vite
+# 💼 Job Application Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, kullanıcıların iş başvurularını kolayca takip edebilmesini sağlayan bir web uygulamasıdır. Sisteme üye olup, başvuru formunu doldurduktan sonra sistemin havuzuna dahil olabilirler. Yapılan başvurular firestore da tutulur ve admin kullanıcılara sunulur. 
 
-Currently, two official plugins are available:
+## ✨ Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📋 Yeni başvuru ekleyebilme
+- 📑 Başvuruların listesini görüntüleme
+- 🔄 Başvuru durumunu güncelleme (Görüşme bekleniyor, Reddedildi, İşe alındı vs.)
+- 🔐 Google hesabı ile güvenli giriş
+- 🎨 Modern ve responsive kullanıcı arayüzü (SCSS kullanılarak geliştirildi)
 
-## Expanding the ESLint configuration
+## 🚀 Kurulum
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Projeyi localde çalıştırmak için şu adımları takip edebilirsin:
+
+```bash
+git clone https://github.com/Sularada/Job-Application-Management-App.git
+cd Job-Application-Management-App
+npm install
+npm run dev
+````
+
+## ⚙️ Firebase Ayarları
+- Firebase Authentication'da Google Sign-In etkinleştirilmeli
+- Firestore veritabanı yapılandırılmalı
+- Ortam değişkenlerini .env dosyasına eklemelisin
+
+## 🛠 Kullanılan Teknolojiler
+- React.js
+- Firebase (Authentication & Firestore)
+- SCSS
+- Vite
+
+## 🧪 Geliştirme Notları
+- src/views altında sayfa bileşenleri yer almakta
+- src/components altında atomik yapıya göre ayrılmış UI bileşenleri bulunur
+- firebase/ klasöründe Firebase yapılandırmaları mevcuttur
